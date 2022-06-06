@@ -3,12 +3,11 @@ project_directory: "/home/runner/work/"
 
 caravel:
     root:           /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6
-    gl_dir:         verilog/gl
-    test_dir:       verilog/dv
-    rtl_dir:        verilog/rtl
-    includes_dir:   verilog/includes/
+    gl_dir:         /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6/verilog/gl
+    test_dir:       /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6/verilog/dv
+    rtl_dir:        /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6/verilog/rtl
+    includes_dir:   /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6/verilog/includes/
     mgmt_root:      /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6/mgmt_core_wrapper/
-    #mgmt_root:      /home/matt/work/asic-workshop/shuttle5/zero_to_asic_mpw5/mgmt_core_wrapper/
     config:         config.tcl
 
 env: # used for simulation
