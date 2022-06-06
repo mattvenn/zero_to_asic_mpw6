@@ -8,12 +8,20 @@
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder/instrumented_adder/src/instrumented_adder.v
 //  3 instrumented adder - sklansky  : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_sklansky
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/sklansky.v
 //  4 instrumented adder - Brent Kung : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_brent
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/brent_kung.v
 //  5 instrumented adder - Ripple carry : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_ripple
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/ripple_carry.v
 //  6 instrumented adder - Kogge Stone : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_kogge
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/kogge_stone.v
 //  8 Wavelet Transform              : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_wavelet_transform
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wrapper.v
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wavelet_transform/src/wavelet_transform.v

@@ -4,7 +4,7 @@
 
 This ASIC was designed by members of the [Zero to ASIC course](https://zerotoasiccourse.com).
 
-This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [43bbb63412b0790882ee1d133f3edc24c0d6d8c7](https://github.com/mattvenn/multi_project_tools/commit/43bbb63412b0790882ee1d133f3edc24c0d6d8c7).
+This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [686724010c43f1577882a5635ae3274dae0b7504](https://github.com/mattvenn/multi_project_tools/commit/686724010c43f1577882a5635ae3274dae0b7504).
 
     # clone all repos, and include support for shared OpenRAM
     ./multi_tool.py --clone-repos --clone-shared-repos --create-openlane-config --copy-gds --copy-project --openram
@@ -35,7 +35,7 @@ This submission was configured and built by the [multi project tools](https://gi
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: e74291a92ae1ded50b8c265f65df0d1bad6e5abe
+* commit: 7a58fce17f3c8caf14c36c9c0af873d1b9f7f72b
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - behavioural](pics/empty.png)
@@ -44,7 +44,7 @@ This submission was configured and built by the [multi project tools](https://gi
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 36c620b89f803be1aaded8181c8deade606ba88b
+* commit: 8e728a3da3ea22061ebd7f26293fc69ba25b7451
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - sklansky](pics/empty.png)
@@ -53,7 +53,7 @@ This submission was configured and built by the [multi project tools](https://gi
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 7bfab207ba7b18ad6d1f83a29cb0ae93503bcc41
+* commit: 73957a4400efe88f3b3c4ebdc0ee9da04cdb06fa
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Brent Kung](pics/empty.png)
@@ -62,7 +62,7 @@ This submission was configured and built by the [multi project tools](https://gi
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 0d597ecc85c48b940fd5835f4e41f5e1edb2f729
+* commit: 680e190e0513b21290ed25e8ae176ef02e1f472e
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Ripple carry](pics/empty.png)
@@ -71,7 +71,7 @@ This submission was configured and built by the [multi project tools](https://gi
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 9c2640ad709d77cfc568c63cf7749e3d39a272be
+* commit: d1ffb55a18bbdc5a0d6df0e95b55fedb116627a0
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Kogge Stone](pics/empty.png)
