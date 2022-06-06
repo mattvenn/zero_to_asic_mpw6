@@ -7,7 +7,7 @@ caravel:
     test_dir:       verilog/dv
     rtl_dir:        verilog/rtl
     includes_dir:   verilog/includes/
-    mgmt_root:      /home/runner/caravel_user_project/mgmt_core_wrapper/
+    mgmt_root:      mgmt_core_wrapper/
     #mgmt_root:      /home/matt/work/asic-workshop/shuttle5/zero_to_asic_mpw5/mgmt_core_wrapper/
     config:         config.tcl
 
