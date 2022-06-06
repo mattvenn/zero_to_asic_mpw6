@@ -43,8 +43,7 @@ jobs:
     # pwd
     - name: pwd
       run: |
-        pwd # /home/runner/work/multi_project_tools/multi_project_tools
-        ls /home/runner/caravel_user_project/mgmt_core_wrapper/
+        pwd # /home/runner/work/zero_to_asic_mpw6/zero_to_asic_mpw6
 
     # remove existing compressed gds
     - name: remove compressed gds
