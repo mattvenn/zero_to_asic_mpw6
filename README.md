@@ -34,6 +34,15 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 ![Function generator](pics/function_generator.png)
 
+## CPR
+
+* Author: Zorkan ERKAN
+* Github: https://github.com/zorkan/cpr
+* commit: d0108b8b896cb1a952a98252f8ad5a516eb7cfcc
+* Description: Developed in accordance with the Aha Standard.
+
+![CPR](pics/cpr.png)
+
 ## instrumented adder - behavioural
 
 * Author: Matt Venn & Teo

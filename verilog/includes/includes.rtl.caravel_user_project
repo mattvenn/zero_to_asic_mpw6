@@ -3,6 +3,9 @@
 //  0 Function generator             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_function_generator
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_function_generator/wrapper.v
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_function_generator/function_generator/src/generator.v
+// 12 CPR                            : /home/matt/work/asic-workshop/shuttle5/openlane/designs/cpr
+-v $(USER_PROJECT_VERILOG)/rtl/cpr/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/cpr/cpr/src/cpr.v
 //  2 instrumented adder - behavioural : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder/wrapper.v
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder/instrumented_adder/src/instrumented_adder.v
