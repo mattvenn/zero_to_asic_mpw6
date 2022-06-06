@@ -303,21 +303,6 @@ module user_project_wrapper #(
         .rambus_wb_dat_i (rambus_wb_dat_i[31:0])
     );
 
-    wrapped_cpr wrapped_cpr_12(
-        `ifdef USE_POWER_PINS
-        .vccd1 (vccd1),
-        .vssd1 (vssd1),
-        `endif
-        .wb_clk_i (wb_clk_i),
-        .active (active[12]),
-        .la1_data_in (la1_data_in[31:0]),
-        .la1_data_out (la1_data_out[31:0]),
-        .la1_oenb (la1_oenb[31:0]),
-        .io_in (io_in[37:0]),
-        .io_out (io_out[37:0]),
-        .io_oeb (io_oeb[37:0])
-    );
-
     wrapped_instrumented_adder_behav wrapped_instrumented_adder_behav_2(
         `ifdef USE_POWER_PINS
         .vccd1 (vccd1),
@@ -334,6 +319,93 @@ module user_project_wrapper #(
         .la3_data_in (la3_data_in[31:0]),
         .la3_data_out (la3_data_out[31:0]),
         .la3_oenb (la3_oenb[31:0])
+    );
+
+    wrapped_instrumented_adder_sklansky wrapped_instrumented_adder_sklansky_3(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[3]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .la2_data_in (la2_data_in[31:0]),
+        .la2_data_out (la2_data_out[31:0]),
+        .la2_oenb (la2_oenb[31:0]),
+        .la3_data_in (la3_data_in[31:0]),
+        .la3_data_out (la3_data_out[31:0]),
+        .la3_oenb (la3_oenb[31:0])
+    );
+
+    wrapped_instrumented_adder_brent wrapped_instrumented_adder_brent_4(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[4]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .la2_data_in (la2_data_in[31:0]),
+        .la2_data_out (la2_data_out[31:0]),
+        .la2_oenb (la2_oenb[31:0]),
+        .la3_data_in (la3_data_in[31:0]),
+        .la3_data_out (la3_data_out[31:0]),
+        .la3_oenb (la3_oenb[31:0])
+    );
+
+    wrapped_instrumented_adder_ripple wrapped_instrumented_adder_ripple_5(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[5]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .la2_data_in (la2_data_in[31:0]),
+        .la2_data_out (la2_data_out[31:0]),
+        .la2_oenb (la2_oenb[31:0]),
+        .la3_data_in (la3_data_in[31:0]),
+        .la3_data_out (la3_data_out[31:0]),
+        .la3_oenb (la3_oenb[31:0])
+    );
+
+    wrapped_instrumented_adder_kogge wrapped_instrumented_adder_kogge_6(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[6]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .la2_data_in (la2_data_in[31:0]),
+        .la2_data_out (la2_data_out[31:0]),
+        .la2_oenb (la2_oenb[31:0]),
+        .la3_data_in (la3_data_in[31:0]),
+        .la3_data_out (la3_data_out[31:0]),
+        .la3_oenb (la3_oenb[31:0])
+    );
+
+    wrapped_wavelet_transform wrapped_wavelet_transform_8(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[8]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
     );
 
     wrapped_PrimitiveCalculator wrapped_PrimitiveCalculator_7(

@@ -4,7 +4,7 @@
 
 This ASIC was designed by members of the [Zero to ASIC course](https://zerotoasiccourse.com).
 
-This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [d5014c812923a7fc00ee521d033a1fd2dd9ac9b4](https://github.com/mattvenn/multi_project_tools/commit/d5014c812923a7fc00ee521d033a1fd2dd9ac9b4).
+This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [43bbb63412b0790882ee1d133f3edc24c0d6d8c7](https://github.com/mattvenn/multi_project_tools/commit/43bbb63412b0790882ee1d133f3edc24c0d6d8c7).
 
     # clone all repos, and include support for shared OpenRAM
     ./multi_tool.py --clone-repos --clone-shared-repos --create-openlane-config --copy-gds --copy-project --openram
@@ -31,20 +31,11 @@ This submission was configured and built by the [multi project tools](https://gi
 
 ![Function generator](pics/function_generator.png)
 
-## CPR
-
-* Author: Zorkan ERKAN
-* Github: https://github.com/zorkan/cpr
-* commit: d0afa2172ca45b279d84b8da508d2f608b6ca1b5
-* Description: Developed in accordance with the Aha Standard.
-
-![CPR](pics/cpr.png)
-
 ## instrumented adder - behavioural
 
 * Author: Matt Venn & Teo
-* Github: https://github.com/mattvenn/wrapped_instrumented_adder_behav
-* commit: 1a8b88951d9e75e9840c5c0fa66554bd809e2692
+* Github: https://github.com/mattvenn/wrapped_instrumented_adder
+* commit: e74291a92ae1ded50b8c265f65df0d1bad6e5abe
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - behavioural](pics/empty.png)
@@ -52,38 +43,47 @@ This submission was configured and built by the [multi project tools](https://gi
 ## instrumented adder - sklansky
 
 * Author: Matt Venn & Teo
-* Github: https://github.com/mattvenn/wrapped_instrumented_adder_sklansky
-* commit: 28df7ae8c4734bac47d0310c221177db9861ba48
+* Github: https://github.com/mattvenn/wrapped_instrumented_adder
+* commit: 36c620b89f803be1aaded8181c8deade606ba88b
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - sklansky](pics/empty.png)
 
-## instrumented adder - brent
+## instrumented adder - Brent Kung
 
 * Author: Matt Venn & Teo
-* Github: https://github.com/mattvenn/wrapped_instrumented_adder_brent
-* commit: 6fe7ea3e46cf8bf25b7242047bc838ee3ca0108f
+* Github: https://github.com/mattvenn/wrapped_instrumented_adder
+* commit: 7bfab207ba7b18ad6d1f83a29cb0ae93503bcc41
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
-![instrumented adder - brent](pics/empty.png)
+![instrumented adder - Brent Kung](pics/empty.png)
 
-## instrumented adder - ripple
+## instrumented adder - Ripple carry
 
 * Author: Matt Venn & Teo
-* Github: https://github.com/mattvenn/wrapped_instrumented_adder_ripple
-* commit: f5d11afec656bd1d83c6a136bae15d53e71ff234
+* Github: https://github.com/mattvenn/wrapped_instrumented_adder
+* commit: 0d597ecc85c48b940fd5835f4e41f5e1edb2f729
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
-![instrumented adder - ripple](pics/empty.png)
+![instrumented adder - Ripple carry](pics/empty.png)
 
-## instrumented adder - kogge
+## instrumented adder - Kogge Stone
 
 * Author: Matt Venn & Teo
-* Github: https://github.com/mattvenn/wrapped_instrumented_adder_kogge
-* commit: 2e72eb2a75aa896d0c12af2b92b8b0f2ba9c9a2c
+* Github: https://github.com/mattvenn/wrapped_instrumented_adder
+* commit: 9c2640ad709d77cfc568c63cf7749e3d39a272be
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
-![instrumented adder - kogge](pics/empty.png)
+![instrumented adder - Kogge Stone](pics/empty.png)
+
+## Wavelet Transform
+
+* Author: Gregory Kielian
+* Github: https://github.com/opensource-fr/wrapped_wavelet_transform
+* commit: 28d8e5434ac8d74fbeb144382ba30574eb9f3f20
+* Description: Implementation Wavelet Transform with 3 filter banks
+
+![Wavelet Transform](pics/gds_image.png)
 
 ## PrimitiveCalculator
 

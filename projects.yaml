@@ -80,24 +80,24 @@ projects:
         commit: 'sklansky' # commit hash doesn't work for some reason
         pos:    '2300 1000 N' # 250 x 250
 
-    wrapped_instrumented_adder_brent:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
-        dir:    'wrapped_instrumented_adder_brent'
-        commit: 'brent'
-        pos:    '2300 1500 N' # 250 x 250
-
-    wrapped_instrumented_adder_ripple:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
-        dir:    'wrapped_instrumented_adder_ripple'
-        commit: 'ripple'
-        pos:    '2300 2000 N' # 250 x 250
-
-    wrapped_instrumented_adder_kogge:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
-        dir:    'wrapped_instrumented_adder_kogge'
-        commit: 'kogge'
-        pos:    '2300 2500 N' # 250 x 250
-
+#    wrapped_instrumented_adder_brent:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+#        dir:    'wrapped_instrumented_adder_brent'
+#        commit: 'brent'
+#        pos:    '2300 1500 N' # 250 x 250
+#
+#    wrapped_instrumented_adder_ripple:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+#        dir:    'wrapped_instrumented_adder_ripple'
+#        commit: 'ripple'
+#        pos:    '2300 2000 N' # 250 x 250
+#
+#    wrapped_instrumented_adder_kogge:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+#        dir:    'wrapped_instrumented_adder_kogge'
+#        commit: 'kogge'
+#        pos:    '2300 2500 N' # 250 x 250
+#
     wrapped_wavelet_transform:
         repo:   'https://github.com/opensource-fr/wrapped_wavelet_transform'
         commit: '28d8e5434ac8d74fbeb144382ba30574eb9f3f20'
