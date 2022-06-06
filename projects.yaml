@@ -1,0 +1,99 @@
+interfaces:
+    required:
+        power: {vccd1: 1, vssd1: 1}
+        clock: {wb_clk_i: 1}
+        active: {active: 1}
+
+    optional:
+        gpio:       {io_in: 38, io_out: 38, io_oeb: 38}
+        la1:        {la1_data_in: 32, la1_data_out: 32, la1_oenb: 32}
+        la2:        {la2_data_in: 32, la2_data_out: 32, la2_oenb: 32}
+        la3:        {la3_data_in: 32, la3_data_out: 32, la3_oenb: 32}
+        irq:        {user_irq: 3}
+        clk2 :      {user_clock2: 1}
+        wishbone:   {wb_rst_i: 1, wbs_stb_i: 1, wbs_cyc_i: 1, wbs_we_i: 1, wbs_sel_i: 4, wbs_dat_i: 32, wbs_adr_i: 32, wbs_ack_o: 1, wbs_dat_o: 32}
+        openram:    {rambus_wb_clk_o: 1, rambus_wb_rst_o: 1, rambus_wb_stb_o: 1, rambus_wb_cyc_o: 1,  rambus_wb_we_o: 1, rambus_wb_sel_o: 4, rambus_wb_dat_o: 32, rambus_wb_adr_o: 10, rambus_wb_ack_i: 1, rambus_wb_dat_i: 32}
+
+openram_support:
+    wb_uprj_bus:    {
+                        wbs_stb_i   : wbs_uprj_stb_i,
+                        wbs_cyc_i   : wbs_uprj_cyc_i,
+                        wbs_we_i    : wbs_uprj_we_i,
+                        wbs_sel_i   : wbs_uprj_sel_i,
+                        wbs_dat_i   : wbs_uprj_dat_i,
+                        wbs_adr_i   : wbs_uprj_adr_i,
+                        wbs_ack_o   : wbs_uprj_ack_o,
+                        wbs_dat_o   : wbs_uprj_dat_o,
+                    }
+    projects:
+
+        wb_bridge:
+            repo:   'https://github.com/embelon/wb_bridge'
+            commit: '4a766fceed9bc52a1ab11621afade3cba1e44eeb'
+            pos:    '1550 480 N'
+            
+        wb_openram_wrapper:
+            repo:   'https://github.com/embelon/wb_openram_wrapper'
+            commit: '9b6c79a6015c46b923d6aed2d5cf9306003d4b3b'
+            pos:    '1085 480 N'
+
+        openram:
+            repo:   'https://github.com/mattvenn/openram_z2a'
+            commit: '1ef59a0d03fc21cdadabec0a3f07ff4e05598f70'
+            pos:    '344 475.5 N'
+
+configuration:
+    macro_snap: 0.23 # half of met2 pin/track space
+    user_area_width: 2920
+    user_area_height: 3520
+    gds:
+        # https://skywater-pdk.readthedocs.io/en/latest/rules/layers.html?highlight=72#gds-layers-information
+        metal5_id:  72 
+        layers: [ 'li', 'met1', 'met2', 'met3', 'met4', 'met5']
+
+docs:
+    pic_dir:        pics
+    index:          index.md
+    px_per_um:      0.53 # for the image markup
+    macro_border:   25 # px
+
+projects:
+    function_generator:
+        repo:   'https://github.com/mattvenn/wrapped_function_generator'
+        commit: '701095fd880ad3bb80d6cec1d214a04e5676a65d'
+        pos:    '350 1200 N'
+
+    cpr:
+        repo:   'https://github.com/zorkan/cpr'
+        commit: 'd0afa2172ca45b279d84b8da508d2f608b6ca1b5'
+        pos:    '350 1700 N'
+
+    wrapped_instrumented_adder_behav:
+        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+        commit: 'e74291a92ae1ded50b8c265f65df0d1bad6e5abe'
+        pos:    '2300 500 N' # 250 x 250
+
+#    wrapped_instrumented_adder_sklansky:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_sklansky'
+#        commit: '28df7ae8c4734bac47d0310c221177db9861ba48'
+#        pos:    '2300 1000 N' # 250 x 250
+#
+#    wrapped_instrumented_adder_brent:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_brent'
+#        commit: '6fe7ea3e46cf8bf25b7242047bc838ee3ca0108f'
+#        pos:    '2300 1500 N' # 250 x 250
+#
+#    wrapped_instrumented_adder_ripple:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_ripple'
+#        commit: 'f5d11afec656bd1d83c6a136bae15d53e71ff234'
+#        pos:    '2300 2000 N' # 250 x 250
+#
+#    wrapped_instrumented_adder_kogge:
+#        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_kogge'
+#        commit: '2e72eb2a75aa896d0c12af2b92b8b0f2ba9c9a2c'
+#        pos:    '2300 2500 N' # 250 x 250
+#
+    wrapped_calculator:
+        repo:   'https://github.com/eemreeh/wrapped_PrimitiveCalculator'
+        commit: 'cb64da0d1b9f5a622a02ee1793c288a04bf580ce'
+        pos:    '870 1200 N'
