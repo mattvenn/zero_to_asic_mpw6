@@ -68,29 +68,34 @@ projects:
 #        commit: '4176b0490dd34bced3b6e04ba30d70f1729cf376'
 #        pos:    '350 1700 N'
 
+
     wrapped_instrumented_adder_behav:
         repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
         commit: 'e74291a92ae1ded50b8c265f65df0d1bad6e5abe'
         pos:    '2300 500 N' # 250 x 250
 
     wrapped_instrumented_adder_sklansky:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_sklansky'
-        commit: '656012712f7078c4dcf553ccf47d7d5aad2be2f8'
+        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+        dir:    'wrapped_instrumented_adder_sklansky'
+        commit: 'sklansky' # commit hash doesn't work for some reason
         pos:    '2300 1000 N' # 250 x 250
 
     wrapped_instrumented_adder_brent:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_brent'
-        commit: '75412f464cb859cf867aa3cc3a24e73738b3ee43'
+        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+        dir:    'wrapped_instrumented_adder_brent'
+        commit: 'brent'
         pos:    '2300 1500 N' # 250 x 250
 
     wrapped_instrumented_adder_ripple:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_ripple'
-        commit: '8b5112086bfdd4ac5b9d7f36aec4545b952c119f'
+        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+        dir:    'wrapped_instrumented_adder_ripple'
+        commit: 'ripple'
         pos:    '2300 2000 N' # 250 x 250
 
     wrapped_instrumented_adder_kogge:
-        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder_kogge'
-        commit: '21194d0f922344320fa7155e8447b89df289fd52'
+        repo:   'https://github.com/mattvenn/wrapped_instrumented_adder'
+        dir:    'wrapped_instrumented_adder_kogge'
+        commit: 'kogge'
         pos:    '2300 2500 N' # 250 x 250
 
 #    wrapped_wavelet_transform:
