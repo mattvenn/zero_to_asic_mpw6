@@ -5,7 +5,7 @@
 
 This ASIC was designed by members of the [Zero to ASIC course](https://zerotoasiccourse.com).
 
-This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [686724010c43f1577882a5635ae3274dae0b7504](https://github.com/mattvenn/multi_project_tools/commit/686724010c43f1577882a5635ae3274dae0b7504).
+This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [4cf859a711cc6bc8bc1a51a6e85adf6fc423fb1f](https://github.com/mattvenn/multi_project_tools/commit/4cf859a711cc6bc8bc1a51a6e85adf6fc423fb1f).
 
 The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.yaml). See the CI for how the build works.
 
@@ -47,7 +47,7 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 7a58fce17f3c8caf14c36c9c0af873d1b9f7f72b
+* commit: 3f4ecc54789723634520b3f780c8d0e9cc7ca25f
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - behavioural](pics/empty.png)
@@ -56,7 +56,7 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 8e728a3da3ea22061ebd7f26293fc69ba25b7451
+* commit: e03234240886bf383a795639fa367449af0d8159
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - sklansky](pics/empty.png)
@@ -65,7 +65,7 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 73957a4400efe88f3b3c4ebdc0ee9da04cdb06fa
+* commit: 0874228702abd86963615161a63b1eafce4bd95b
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Brent Kung](pics/empty.png)
@@ -74,7 +74,7 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: 680e190e0513b21290ed25e8ae176ef02e1f472e
+* commit: 5c1bd6838e21b7be080d99ec564f89196b5177fb
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Ripple carry](pics/empty.png)
@@ -83,7 +83,7 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 
 * Author: Matt Venn & Teo
 * Github: https://github.com/mattvenn/wrapped_instrumented_adder
-* commit: d1ffb55a18bbdc5a0d6df0e95b55fedb116627a0
+* commit: ab5f6a2cc1da5fbdb6d4a22bdfcb502147cbe2a8
 * Description: adds a precise timer to optimised hardware adders to measure how fast they are
 
 ![instrumented adder - Kogge Stone](pics/empty.png)

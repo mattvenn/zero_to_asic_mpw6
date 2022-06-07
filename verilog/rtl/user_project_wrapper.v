@@ -346,6 +346,9 @@ module user_project_wrapper #(
         `endif
         .wb_clk_i (wb_clk_i),
         .active (active[3]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
         .la1_data_in (la1_data_in[31:0]),
         .la1_data_out (la1_data_out[31:0]),
         .la1_oenb (la1_oenb[31:0]),
@@ -364,6 +367,9 @@ module user_project_wrapper #(
         `endif
         .wb_clk_i (wb_clk_i),
         .active (active[4]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
         .la1_data_in (la1_data_in[31:0]),
         .la1_data_out (la1_data_out[31:0]),
         .la1_oenb (la1_oenb[31:0]),
@@ -382,6 +388,9 @@ module user_project_wrapper #(
         `endif
         .wb_clk_i (wb_clk_i),
         .active (active[5]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
         .la1_data_in (la1_data_in[31:0]),
         .la1_data_out (la1_data_out[31:0]),
         .la1_oenb (la1_oenb[31:0]),
@@ -400,6 +409,9 @@ module user_project_wrapper #(
         `endif
         .wb_clk_i (wb_clk_i),
         .active (active[6]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0]),
         .la1_data_in (la1_data_in[31:0]),
         .la1_data_out (la1_data_out[31:0]),
         .la1_oenb (la1_oenb[31:0]),

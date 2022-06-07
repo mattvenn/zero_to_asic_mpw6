@@ -1,0 +1,120 @@
+[options]
+mode prove
+depth 5
+
+[engines]
+smtbmc
+
+[script]
+#  0 Function generator             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_function_generator
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_function_generator/wrapper.v
+read -sv rtl/wrapped_function_generator/function_generator/src/generator.v
+
+prep -top wrapped_function_generator
+flatten
+
+design -stash wrapped_function_generator
+# end
+#  2 instrumented adder - behavioural : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_instrumented_adder/wrapper.v
+read -sv rtl/wrapped_instrumented_adder/instrumented_adder/src/instrumented_adder.v
+
+prep -top wrapped_instrumented_adder_behav
+flatten
+
+design -stash wrapped_instrumented_adder_behav
+# end
+#  3 instrumented adder - sklansky  : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_sklansky
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_instrumented_adder_sklansky/wrapper.v
+read -sv rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/instrumented_adder.v
+read -sv rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/sklansky.v
+
+prep -top wrapped_instrumented_adder_sklansky
+flatten
+
+design -stash wrapped_instrumented_adder_sklansky
+# end
+#  4 instrumented adder - Brent Kung : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_brent
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_instrumented_adder_brent/wrapper.v
+read -sv rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/instrumented_adder.v
+read -sv rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/brent_kung.v
+
+prep -top wrapped_instrumented_adder_brent
+flatten
+
+design -stash wrapped_instrumented_adder_brent
+# end
+#  5 instrumented adder - Ripple carry : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_ripple
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_instrumented_adder_ripple/wrapper.v
+read -sv rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/instrumented_adder.v
+read -sv rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/ripple_carry.v
+
+prep -top wrapped_instrumented_adder_ripple
+flatten
+
+design -stash wrapped_instrumented_adder_ripple
+# end
+#  6 instrumented adder - Kogge Stone : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_kogge
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_instrumented_adder_kogge/wrapper.v
+read -sv rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/instrumented_adder.v
+read -sv rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/kogge_stone.v
+
+prep -top wrapped_instrumented_adder_kogge
+flatten
+
+design -stash wrapped_instrumented_adder_kogge
+# end
+
+#shared
+
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wb_bridge/src/wb_bridge_2way.v
+read -sv rtl/wb_openram_wrapper/src/register_rw.v
+read -sv rtl/wb_openram_wrapper/src/wb_port_control.v
+read -sv rtl/wb_openram_wrapper/src/wb_openram_wrapper.v
+read -sv rtl/openram_z2a/src/sky130_sram_1kbyte_1rw1r_32x256_8.v
+
+read -define FORMAL
+read -sv rtl/user_project_wrapper.v
+
+design -import wrapped_function_generator
+design -import wrapped_instrumented_adder_behav
+design -import wrapped_instrumented_adder_sklansky
+design -import wrapped_instrumented_adder_brent
+design -import wrapped_instrumented_adder_ripple
+design -import wrapped_instrumented_adder_kogge
+
+prep -top user_project_wrapper
+
+flatten; tribuf -formal
+
+[files]
+verilog/rtl
+caravel/verilog/rtl/defines.v
