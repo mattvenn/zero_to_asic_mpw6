@@ -39,6 +39,16 @@
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveALU.v
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveCalculator.v
 -v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/RotaryEncoder.v
+//  9 snn-accelerator                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/snn-accelerator
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/clk_div.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_2x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_4x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_8x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_slow.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/out_neuron.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/wrapped_snn.v
 // shared Bridge                     : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_bridge
 // shared Wrapper                    : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_openram_wrapper
 // shared OpenRAM 1kybte             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/openram_z2a

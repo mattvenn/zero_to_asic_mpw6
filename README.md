@@ -5,7 +5,7 @@
 
 This ASIC was designed by members of the [Zero to ASIC course](https://zerotoasiccourse.com).
 
-This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [4cf859a711cc6bc8bc1a51a6e85adf6fc423fb1f](https://github.com/mattvenn/multi_project_tools/commit/4cf859a711cc6bc8bc1a51a6e85adf6fc423fb1f).
+This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [781cd018307601bde1a165c8ae51d81f652b9627](https://github.com/mattvenn/multi_project_tools/commit/781cd018307601bde1a165c8ae51d81f652b9627).
 
 The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.yaml). See the CI for how the build works.
 
@@ -105,4 +105,13 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 * Description: description
 
 ![PrimitiveCalculator](pics/PrimitiveCalculator.png)
+
+## snn-accelerator
+
+* Author: Jason K. Eshraghian
+* Github: https://github.com/jeshraghian/snn-accelerator
+* commit: aea4db644906e85577d58432e385d885566be87e
+* Description: Lightweight Spiking Neural Network Accelerator in SKY130
+
+![snn-accelerator](pics/gds_2.png)
 

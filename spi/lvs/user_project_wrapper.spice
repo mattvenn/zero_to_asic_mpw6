@@ -293,6 +293,24 @@
 + la3_oenb[9] vccd1 vssd1 wb_clk_i
 .ends
 
+* Black-box entry subcircuit for wrapped_snn abstract view
+.subckt wrapped_snn active io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14]
++ io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21] io_in[22]
++ io_in[23] io_in[24] io_in[25] io_in[26] io_in[27] io_in[28] io_in[29] io_in[2] io_in[30]
++ io_in[31] io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[3] io_in[4]
++ io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oeb[0] io_oeb[10] io_oeb[11] io_oeb[12]
++ io_oeb[13] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] io_oeb[18] io_oeb[19] io_oeb[1]
++ io_oeb[20] io_oeb[21] io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25] io_oeb[26] io_oeb[27]
++ io_oeb[28] io_oeb[29] io_oeb[2] io_oeb[30] io_oeb[31] io_oeb[32] io_oeb[33] io_oeb[34]
++ io_oeb[35] io_oeb[36] io_oeb[37] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7]
++ io_oeb[8] io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13] io_out[14]
++ io_out[15] io_out[16] io_out[17] io_out[18] io_out[19] io_out[1] io_out[20] io_out[21]
++ io_out[22] io_out[23] io_out[24] io_out[25] io_out[26] io_out[27] io_out[28] io_out[29]
++ io_out[2] io_out[30] io_out[31] io_out[32] io_out[33] io_out[34] io_out[35] io_out[36]
++ io_out[37] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9]
++ vccd1 vssd1 wb_clk_i
+.ends
+
 * Black-box entry subcircuit for wrapped_function_generator abstract view
 .subckt wrapped_function_generator active io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
@@ -1078,6 +1096,21 @@ Xwrapped_instrumented_adder_behav_2 la_data_in[2] io_in[0] io_in[10] io_in[11] i
 + la_oenb[119] la_oenb[120] la_oenb[121] la_oenb[122] la_oenb[123] la_oenb[124] la_oenb[125]
 + la_oenb[98] la_oenb[126] la_oenb[127] la_oenb[99] la_oenb[100] la_oenb[101] la_oenb[102]
 + la_oenb[103] la_oenb[104] la_oenb[105] vccd1 vssd1 wb_clk_i wrapped_instrumented_adder_behav
+Xwrapped_snn_9 la_data_in[9] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14]
++ io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21] io_in[22]
++ io_in[23] io_in[24] io_in[25] io_in[26] io_in[27] io_in[28] io_in[29] io_in[2] io_in[30]
++ io_in[31] io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[3] io_in[4]
++ io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oeb[0] io_oeb[10] io_oeb[11] io_oeb[12]
++ io_oeb[13] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] io_oeb[18] io_oeb[19] io_oeb[1]
++ io_oeb[20] io_oeb[21] io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25] io_oeb[26] io_oeb[27]
++ io_oeb[28] io_oeb[29] io_oeb[2] io_oeb[30] io_oeb[31] io_oeb[32] io_oeb[33] io_oeb[34]
++ io_oeb[35] io_oeb[36] io_oeb[37] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7]
++ io_oeb[8] io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13] io_out[14]
++ io_out[15] io_out[16] io_out[17] io_out[18] io_out[19] io_out[1] io_out[20] io_out[21]
++ io_out[22] io_out[23] io_out[24] io_out[25] io_out[26] io_out[27] io_out[28] io_out[29]
++ io_out[2] io_out[30] io_out[31] io_out[32] io_out[33] io_out[34] io_out[35] io_out[36]
++ io_out[37] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9]
++ vccd1 vssd1 wb_clk_i wrapped_snn
 Xwrapped_function_generator_0 la_data_in[0] io_in[0] io_in[10] io_in[11] io_in[12]
 + io_in[13] io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20]
 + io_in[21] io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] io_in[27] io_in[28]
