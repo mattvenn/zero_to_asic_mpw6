@@ -19,6 +19,19 @@ flatten
 
 design -stash wrapped_function_generator
 # end
+# 12 CPR                            : /home/matt/work/asic-workshop/shuttle5/openlane/designs/cpr
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/cpr/wrapper.v
+read -sv rtl/cpr/cpr/src/cpr.v
+
+prep -top wrapped_cpr
+flatten
+
+design -stash wrapped_cpr
+# end
 #  2 instrumented adder - behavioural : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder
 read -noverific
 read -sv defines.v
@@ -88,6 +101,60 @@ flatten
 
 design -stash wrapped_instrumented_adder_kogge
 # end
+#  8 Wavelet Transform              : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_wavelet_transform
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_wavelet_transform/wrapper.v
+read -sv rtl/wrapped_wavelet_transform/wavelet_transform/src/wavelet_transform.v
+read -sv rtl/wrapped_wavelet_transform/wavelet_transform/src/shift_register_line.v
+read -sv rtl/wrapped_wavelet_transform/wavelet_transform/src/fir.v
+read -sv rtl/wrapped_wavelet_transform/wavelet_transform/src/output_multiplexer.v
+
+prep -top wrapped_wavelet_transform
+flatten
+
+design -stash wrapped_wavelet_transform
+# end
+#  7 PrimitiveCalculator            : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_PrimitiveCalculator
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_PrimitiveCalculator/wrapper.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/ClockDivider.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/Debouncer.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/HexSevenSegmentDecoder.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveALU.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveCalculator.v
+read -sv rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/RotaryEncoder.v
+
+prep -top wrapped_PrimitiveCalculator
+flatten
+
+design -stash wrapped_PrimitiveCalculator
+# end
+#  9 snn-accelerator                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/snn-accelerator
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/snn-accelerator/wrapper.v
+read -sv rtl/snn-accelerator/src/clk_div.v
+read -sv rtl/snn-accelerator/src/neuron_2x.v
+read -sv rtl/snn-accelerator/src/neuron_4x.v
+read -sv rtl/snn-accelerator/src/neuron_8x.v
+read -sv rtl/snn-accelerator/src/neuron_slow.v
+read -sv rtl/snn-accelerator/src/neuron.v
+read -sv rtl/snn-accelerator/src/out_neuron.v
+read -sv rtl/snn-accelerator/src/wrapped_snn.v
+
+prep -top wrapped_snn
+flatten
+
+design -stash wrapped_snn
+# end
 
 #shared
 
@@ -105,11 +172,15 @@ read -define FORMAL
 read -sv rtl/user_project_wrapper.v
 
 design -import wrapped_function_generator
+design -import wrapped_cpr
 design -import wrapped_instrumented_adder_behav
 design -import wrapped_instrumented_adder_sklansky
 design -import wrapped_instrumented_adder_brent
 design -import wrapped_instrumented_adder_ripple
 design -import wrapped_instrumented_adder_kogge
+design -import wrapped_wavelet_transform
+design -import wrapped_PrimitiveCalculator
+design -import wrapped_snn
 
 prep -top user_project_wrapper
 
