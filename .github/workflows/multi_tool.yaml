@@ -63,7 +63,7 @@ jobs:
 
     # install projects
     - name: install project
-      run: python $HOME/multi_project_tools/multi_tool.py --create-openlane-config --copy-project --openram --copy-gds
+      run: python $HOME/multi_project_tools/multi_tool.py --create-openlane-config --copy-project --openram --copy-gds --force
 
     # tests
     - name: test gds
