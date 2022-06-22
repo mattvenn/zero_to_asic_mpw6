@@ -5,7 +5,7 @@
 
 This ASIC was designed by members of the [Zero to ASIC course](https://zerotoasiccourse.com).
 
-This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [781cd018307601bde1a165c8ae51d81f652b9627](https://github.com/mattvenn/multi_project_tools/commit/781cd018307601bde1a165c8ae51d81f652b9627).
+This submission was configured and built by the [multi project tools](https://github.com/mattvenn/multi_project_tools) at commit [d457e46af2d86d39c1c2270ae95b828c5d26f518](https://github.com/mattvenn/multi_project_tools/commit/d457e46af2d86d39c1c2270ae95b828c5d26f518).
 
 The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.yaml). See the CI for how the build works.
 
@@ -114,4 +114,13 @@ The configuration files are [projects.yaml](projects.yaml) & [local.yaml](local.
 * Description: Lightweight Spiking Neural Network Accelerator in SKY130
 
 ![snn-accelerator](pics/gds_2.png)
+
+## scan chain test
+
+* Author: Matt Venn
+* Github: https://github.com/mattvenn/wrapped_scan_test
+* commit: bc7706bbd5f524a901fcaf520cdf8fbedee2223c
+* Description: testing a simple scan chain for very small designs
+
+![scan chain test](pics/blockdiagram.jpg)
 
