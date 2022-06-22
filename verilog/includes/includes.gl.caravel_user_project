@@ -1,3 +1,63 @@
-# Caravel user project includes	     
--v $(USER_PROJECT_VERILOG)/gl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/gl/user_proj_example.v     
+# Caravel user project includes
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v
+//  0 Function generator             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_function_generator
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_function_generator/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_function_generator/function_generator/src/generator.v
+// 12 CPR                            : /home/matt/work/asic-workshop/shuttle5/openlane/designs/cpr
+-v $(USER_PROJECT_VERILOG)/rtl/cpr/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/cpr/cpr/src/cpr.v
+//  2 instrumented adder - behavioural : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder
+-v $(USER_PROJECT_VERILOG)/gl/wrapped_instrumented_adder_behav.v
+//  3 instrumented adder - sklansky  : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_sklansky
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_sklansky/instrumented_adder/src/sklansky.v
+//  4 instrumented adder - Brent Kung : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_brent
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_brent/instrumented_adder/src/brent_kung.v
+//  5 instrumented adder - Ripple carry : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_ripple
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_ripple/instrumented_adder/src/ripple_carry.v
+//  6 instrumented adder - Kogge Stone : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_instrumented_adder_kogge
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/instrumented_adder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_instrumented_adder_kogge/instrumented_adder/src/kogge_stone.v
+//  8 Wavelet Transform              : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_wavelet_transform
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wavelet_transform/src/wavelet_transform.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wavelet_transform/src/shift_register_line.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wavelet_transform/src/fir.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_wavelet_transform/wavelet_transform/src/output_multiplexer.v
+//  7 PrimitiveCalculator            : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_PrimitiveCalculator
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/ClockDivider.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/Debouncer.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/HexSevenSegmentDecoder.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveALU.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/PrimitiveCalculator.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_PrimitiveCalculator/PrimitiveCalculator_/src/RotaryEncoder.v
+//  9 snn-accelerator                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/snn-accelerator
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/clk_div.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_2x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_4x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_8x.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron_slow.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/out_neuron.v
+-v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/wrapped_snn.v
+// 13 scan chain test                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_scan_test
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/scan_test/scan_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/scan_test/mini_design.v
+// shared Bridge                     : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_bridge
+// shared Wrapper                    : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_openram_wrapper
+// shared OpenRAM 1kybte             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/openram_z2a
+-v $(USER_PROJECT_VERILOG)/rtl/wb_bridge/src/wb_bridge_2way.v
+-v $(USER_PROJECT_VERILOG)/rtl/wb_openram_wrapper/src/register_rw.v
+-v $(USER_PROJECT_VERILOG)/rtl/wb_openram_wrapper/src/wb_port_control.v
+-v $(USER_PROJECT_VERILOG)/rtl/wb_openram_wrapper/src/wb_openram_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/openram_z2a/src/sky130_sram_1kbyte_1rw1r_32x256_8.v
+

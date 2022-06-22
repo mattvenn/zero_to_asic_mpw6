@@ -11,6 +11,7 @@
 // | 8          | Wavelet Transform                 | Gregory Kielian     | https://github.com/opensource-fr/wrapped_wavelet_transform | 28d8e5434ac8d74fbeb144382ba30574eb9f3f20 |
 // | 7          | PrimitiveCalculator               | Emre Hepsag         | https://github.com/eemreeh/wrapped_PrimitiveCalculator     | cb64da0d1b9f5a622a02ee1793c288a04bf580ce |
 // | 9          | snn-accelerator                   | Jason K. Eshraghian | https://github.com/jeshraghian/snn-accelerator             | aea4db644906e85577d58432e385d885566be87e |
+// | 13         | scan chain test                   | Matt Venn           | https://github.com/mattvenn/wrapped_scan_test              | todo                                     |
 // +------------+-----------------------------------+---------------------+------------------------------------------------------------+------------------------------------------+
 `include "wrapped_function_generator/wrapper.v" // 0
 `include "cpr/wrapper.v" // 12
@@ -22,6 +23,7 @@
 `include "wrapped_wavelet_transform/wrapper.v" // 8
 `include "wrapped_PrimitiveCalculator/wrapper.v" // 7
 `include "snn-accelerator/wrapper.v" // 9
+`include "wrapped_scan_test/wrapper.v" // 13
 // shared projects
 `include "wb_bridge/src/wb_bridge_2way.v"
 `include "wb_openram_wrapper/src/register_rw.v"

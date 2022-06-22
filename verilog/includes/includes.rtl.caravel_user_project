@@ -49,6 +49,10 @@
 -v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/neuron.v
 -v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/out_neuron.v
 -v $(USER_PROJECT_VERILOG)/rtl/snn-accelerator/src/wrapped_snn.v
+// 13 scan chain test                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_scan_test
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/scan_test/scan_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/wrapped_scan_test/scan_test/mini_design.v
 // shared Bridge                     : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_bridge
 // shared Wrapper                    : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wb_openram_wrapper
 // shared OpenRAM 1kybte             : /home/matt/work/asic-workshop/shuttle5/openlane/designs/openram_z2a

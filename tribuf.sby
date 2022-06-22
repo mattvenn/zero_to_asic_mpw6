@@ -155,6 +155,20 @@ flatten
 
 design -stash wrapped_snn
 # end
+# 13 scan chain test                : /home/matt/work/asic-workshop/shuttle5/openlane/designs/wrapped_scan_test
+read -noverific
+read -sv defines.v
+read -define FORMAL_COMPAT
+
+read -sv rtl/wrapped_scan_test/wrapper.v
+read -sv rtl/wrapped_scan_test/scan_test/scan_wrapper.v
+read -sv rtl/wrapped_scan_test/scan_test/mini_design.v
+
+prep -top wrapped_scan_test
+flatten
+
+design -stash wrapped_scan_test
+# end
 
 #shared
 
@@ -181,6 +195,7 @@ design -import wrapped_instrumented_adder_kogge
 design -import wrapped_wavelet_transform
 design -import wrapped_PrimitiveCalculator
 design -import wrapped_snn
+design -import wrapped_scan_test
 
 prep -top user_project_wrapper
 

@@ -468,6 +468,18 @@ module user_project_wrapper #(
         .la1_oenb (la1_oenb[31:0])
     );
 
+    wrapped_scan_test wrapped_scan_test_13(
+        `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+        `endif
+        .wb_clk_i (wb_clk_i),
+        .active (active[13]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0])
+    );
+
     // end of module instantiation
 
 endmodule	// user_project_wrapper
